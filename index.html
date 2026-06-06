@@ -7,10 +7,10 @@
     <title>Jasa Demolition, Coring & Potong Beton Terbesar Jawa Barat | MITS Engineering</title>
     <meta name="description" content="Awas proyek telat & struktur retak! Spesialis jasa demolition, coring beton, & potong beton industri di Bandung Raya. Alat mutakhir, tenaga K3, beli baja tinggi.">
     
-    <!-- Zero-Bloat: Menghapus Google Fonts untuk mencegah render-blocking, menggunakan system-ui -->
+    <!-- LCP OPTIMIZATION DEWA: Preload gambar langsung -->
     <link rel="preload" as="image" href="hero-bg-kontraktor-demolition-jawa-barat.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="logo-msr-engineering-demolition.webp" type="image/webp" fetchpriority="high">
     
-    <!-- Tailwind CDN dipertahankan khusus untuk deployment Vercel statis sesuai template -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- GOD-TIER JSON-LD SILO & ENTITY HIJACKING -->
@@ -23,20 +23,20 @@
           "name": "PT. Mitra Sentosa Rahardja (MITS Engineering)",
           "image": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app/hero-bg-kontraktor-demolition-jawa-barat.webp",
           "@id": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app/#organization",
-          "url": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app",
-          "telephone": "+6281122334455",
+          "url": "https://mitsengineering.com/",
+          "telephone": "+628138111599",
           "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Jl. Industri Raya, Kawasan Pabrik",
-            "addressLocality": "Bandung",
-            "addressRegion": "Jawa Barat",
-            "postalCode": "40111",
+            "streetAddress": "Jl. Praja III Jl. Sultan Iskandar Muda No.37, RT.5/RW.1, Kby. Lama Sel., Kec. Kebayoran Lama",
+            "addressLocality": "Jakarta Selatan",
+            "addressRegion": "DKI Jakarta",
+            "postalCode": "12240",
             "addressCountry": "ID"
           },
           "sameAs": [
-            "https://instagram.com/mitsengineering",
-            "https://facebook.com/mitsengineering",
+            "https://strukturbaja.id/",
+            "https://bajastruktur.com/",
             "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app"
           ]
         },
@@ -60,18 +60,16 @@
     </script>
 
     <style>
-        /* Fallback tipografi render-cepat */
         .font-system { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
         .font-heading { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif !important; font-weight: 800; }
         
-        /* Gambar Hero: Transform GPU Acceleration */
         .hero-bg { will-change: transform; transform: translateZ(0); }
 
-        /* Shiny CTA Button CSS (Animasi Pulse/Denyut) */
+        /* Shiny CTA Button CSS */
         @property --gradient-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
         @property --gradient-angle-offset { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
         @property --gradient-percent { syntax: "<percentage>"; initial-value: 20%; inherits: false; }
-        @property --gradient-shine { syntax: "<color>"; initial-value: #eab308; inherits: false; } /* Kuning Proyek */
+        @property --gradient-shine { syntax: "<color>"; initial-value: #eab308; inherits: false; }
         .shiny-cta {
             --gradient-angle: 0deg; --gradient-angle-offset: 0deg; --gradient-percent: 20%; --gradient-shine: #eab308;
             position: relative; overflow: hidden; border-radius: 9999px; padding: 1rem 2rem; font-size: 1.125rem; font-weight: 800; color: #ffffff;
@@ -97,21 +95,22 @@
         .shiny-cta span { position: relative; z-index: 2; display: inline-block; }
         @keyframes shimmer { to { transform: translate(-50%, -50%) rotate(360deg);} }
         
-        /* PROTOKOL LAZY RENDERING (Meringankan beban CPU HP) */
         .lazy-render { content-visibility: auto; contain-intrinsic-size: 1px 1000px; }
     </style>
 </head>
 <body class="antialiased text-neutral-100 bg-neutral-950 font-system selection:bg-yellow-500 selection:text-black relative pb-20 md:pb-0">
 
-    <!-- HERO SECTION -->
-    <div class="absolute top-0 w-full -z-10 h-[920px] bg-cover bg-center blur-sm opacity-30 hero-bg" style="background-image: url('hero-bg-kontraktor-demolition-jawa-barat.webp');"></div>
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/80 via-neutral-950/95 to-neutral-950"></div>
+    <!-- SOLUSI ZERO-BLOAT LCP MOBILE: Mengubah BG CSS menjadi Img HTML -->
+    <div class="absolute top-0 left-0 w-full h-[920px] overflow-hidden -z-10 bg-neutral-900">
+        <img src="hero-bg-kontraktor-demolition-jawa-barat.webp" alt="Proyek pembongkaran gedung dan potong beton skala besar" fetchpriority="high" loading="eager" decoding="sync" class="w-full h-full object-cover blur-sm opacity-30 hero-bg">
+        <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/80 via-neutral-950/90 to-neutral-950"></div>
+    </div>
 
     <section class="relative w-full sm:px-6 md:px-10 max-w-7xl mt-6 mx-auto px-4">
         <header class="w-full">
             <div class="flex gap-4 w-full mb-8 items-center justify-between">
                 <a href="/" class="flex items-center gap-3">
-                    <img src="logo-msr-engineering-demolition.webp" alt="Logo PT Mitra Sentosa Rahardja Kontraktor Demolition" width="250" height="80" class="h-16 md:h-20 w-auto object-contain">
+                    <img src="logo-msr-engineering-demolition.webp" alt="Logo PT Mitra Sentosa Rahardja Kontraktor Demolition" width="250" height="80" class="h-16 md:h-20 w-auto object-contain" fetchpriority="high" loading="eager" decoding="sync">
                 </a>
                 <nav class="hidden md:flex items-center gap-8 text-sm text-neutral-300 font-bold uppercase tracking-wide">
                     <a href="#layanan" class="hover:text-yellow-400 transition-colors">Layanan</a>
@@ -131,7 +130,7 @@
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 mt-12 justify-center pb-12">
-            <a href="https://wa.me/6281122334455?text=Halo%20MITS%20Engineering,%20saya%20butuh%20survey%20proyek%20demolition/coring%20segera." class="shiny-cta focus:outline-none w-full sm:w-auto text-center">
+            <a href="https://wa.me/628138111599?text=Halo%20MITS%20Engineering,%20saya%20butuh%20survey%20dan%20konsultasi%20gratis%20proyek%20demolition/coring%20sekarang." class="shiny-cta focus:outline-none w-full sm:w-auto text-center">
                 <span>KONSULTASI & SURVEY GRATIS SEKARANG</span>
             </a>
         </div>
@@ -145,7 +144,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Layanan 1 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="jasa-bobok-coring-beton-bandung.webp" alt="Jasa tukang bobok dan coring beton perumahan bandung" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -155,11 +153,10 @@
                             Modifikasi rumah atau gedung sipil butuh akurasi. Kami melubangi beton bertulang tanpa merusak integritas struktur sekitarnya. Cepat, bersih, dan aman.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Jasa%20Bobok%20dan%20Coring%20Bandung." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Coring</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20tertarik%20dengan%20Jasa%20Bobok%20dan%20Coring%20Beton." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Survey Tim Coring</a>
                 </div>
             </article>
 
-            <!-- Layanan 2 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="potong-beton-industri-jawa-barat.webp" alt="Mesin potong beton industri wire saw jawa barat" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -169,11 +166,10 @@
                             Mesin pabrik harus masuk hari ini? Kami potong lantai beton industri menggunakan mesin <i>Floor Saw</i> raksasa. Potongan presisi milimeter. Tanpa debu berlebih.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Potong%20Beton%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Potong Beton</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20membutuhkan%20Jasa%20Potong%20Beton%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Tanya Tim Potong Beton</a>
                 </div>
             </article>
 
-            <!-- Layanan 3 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="jasa-bongkar-gedung-beli-baja-bekas.webp" alt="Proses pembongkaran gedung dan evakuasi struktur baja" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -183,11 +179,10 @@
                             Aset tua Anda adalah uang. Kami merubuhkan gedung bertingkat dengan alat berat ekskavator. Scrap besi dan baja kami beli kembali dengan harga tertinggi di pasaran.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Gedung%20dan%20Jual%20Baja." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Bongkar</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20ingin%20info%20Bongkar%20Gedung%20dan%20Jual%20Baja." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Bongkar</a>
                 </div>
             </article>
 
-            <!-- Layanan 4 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="dismantling-pabrik-mesin-cimahi.webp" alt="Proses dismantling mesin berat fasilitas pabrik cimahi" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -197,11 +192,10 @@
                             Relokasi mesin berat dan pipa smelter tidak bisa serampangan. Tim *rigger* dan spesialis *dismantling* kami mengurai fasilitas industri tanpa merusak mesin inti.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Dismantling%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Dismantling</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20bisa%20survey%20untuk%20Dismantling%20Pabrik?" class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Panggil Tim Dismantling</a>
                 </div>
             </article>
 
-            <!-- Layanan 5 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="demolition-gudang-aman-padalarang.webp" alt="Demolition bangunan gudang industri aman padalarang" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -211,11 +205,10 @@
                             Lahan sempit? Padat penduduk? Tidak masalah. Kami merobohkan gudang raksasa dengan teknik *controlled demolition*. Minim getaran, aman untuk warga sekitar.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Demolition%20Gudang." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Relokasi</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20butuh%20layanan%20Demolition%20Gudang." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Relokasi</a>
                 </div>
             </article>
 
-            <!-- Layanan 6 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
                 <img src="coring-beton-jalur-mep-gedung.webp" alt="Coring beton presisi tinggi untuk jalur pipa MEP" class="w-full h-48 object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between">
@@ -225,11 +218,10 @@
                             Pemasangan instalasi listrik dan plumbing gedung bertingkat mutlak butuh lubang simetris. Mesin coring kami menembus beton bertulang tebal dengan diameter presisi.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Coring%20MEP." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim MEP</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20butuh%20Coring%20untuk%20jalur%20MEP." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Tanya Tim MEP</a>
                 </div>
             </article>
 
-            <!-- Layanan 7 -->
             <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 lg:col-span-3 lg:w-2/3 lg:mx-auto flex flex-col md:flex-row">
                 <img src="bongkar-pondasi-modifikasi-struktur.webp" alt="Ahli bongkar potong pondasi beton bangunan" class="w-full md:w-1/2 h-48 md:h-auto object-cover" loading="lazy" decoding="async">
                 <div class="p-6 flex flex-col flex-grow justify-between md:w-1/2">
@@ -239,7 +231,7 @@
                             Pondasi lama menghalangi desain baru? Kami menggunakan *Wire Saw* dan *Jack Hammer* hidrolik untuk menghancurkan pilar beton masif hingga rata dengan tanah. Struktur baru siap dibangun.
                         </p>
                     </div>
-                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Pondasi." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Struktur</a>
+                    <a href="https://wa.me/628138111599?text=Halo,%20saya%20punya%20proyek%20Bongkar%20Pondasi." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Ahli Struktur</a>
                 </div>
             </article>
         </div>
@@ -334,32 +326,50 @@
         </div>
     </section>
 
-    <!-- PETA LOKASI & KONTAK -->
+    <!-- PETA LOKASI & KONTAK TERBARU -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lazy-render">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden">
             <div class="p-8 md:p-12 flex flex-col justify-center">
                 <h2 class="text-3xl font-heading text-white uppercase font-black mb-6">Jangan Biarkan Mesin Pabrik Mati Total.</h2>
-                <p class="text-neutral-300 mb-6 font-medium">Setiap jam yang tertunda karena vendor bongkar amatiran adalah uang yang terbakar sia-sia. Hubungi kami sekarang. Tim lapangan MITS siap meluncur ke lokasi Anda di seluruh penjuru Jawa Barat.</p>
+                <p class="text-neutral-300 mb-8 font-medium">Setiap jam yang tertunda karena vendor bongkar amatiran adalah uang yang terbakar sia-sia. Hubungi kami sekarang. Tim lapangan MITS siap meluncur ke lokasi Anda.</p>
                 
-                <div class="space-y-4 mb-8">
+                <div class="space-y-6 mb-10">
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0">📍</div>
+                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0 text-xl">📍</div>
                         <div>
-                            <p class="text-white font-bold">Basecamp Operasional</p>
-                            <p class="text-neutral-400 text-sm">Jl. Industri Raya, Kawasan Pabrik, Bandung, Jawa Barat 40111</p>
+                            <p class="text-white font-bold text-lg">PT. Mitra Sentosa Rahardja</p>
+                            <p class="text-yellow-500 text-sm font-bold tracking-wide uppercase mb-2">Demolition Specialist | Coring & Concrete Cutting</p>
+                            <p class="text-neutral-400 text-sm leading-relaxed">Jl. Praja III Jl. Sultan Iskandar Muda No.37, RT.5/RW.1, Kby. Lama Sel., Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240, Indonesia</p>
                         </div>
                     </div>
+                    
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0">📞</div>
+                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0 text-xl">📞</div>
                         <div>
-                            <p class="text-white font-bold">Hotline Darurat 24/7</p>
-                            <p class="text-yellow-500 font-black text-xl">0811-2233-4455</p>
+                            <p class="text-white font-bold mb-2">Hubungi Kami untuk Survey & Konsultasi Gratis</p>
+                            <div class="flex flex-col gap-1">
+                                <a href="https://wa.me/628138111599?text=Halo%20MITS%20Engineering,%20saya%20butuh%20konsultasi." class="text-yellow-500 font-black text-xl hover:text-yellow-400 transition-colors">0813-8111-599</a>
+                                <a href="https://wa.me/6281213117488?text=Halo%20MITS%20Engineering,%20saya%20butuh%20konsultasi." class="text-yellow-500 font-black text-xl hover:text-yellow-400 transition-colors">0812-1311-7488</a>
+                                <a href="https://wa.me/6287898400088?text=Halo%20MITS%20Engineering,%20saya%20butuh%20konsultasi." class="text-yellow-500 font-black text-xl hover:text-yellow-400 transition-colors">0878-9840-0088</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0 text-xl">🌐</div>
+                        <div>
+                            <p class="text-white font-bold mb-2">Jaringan Website Resmi</p>
+                            <div class="flex flex-col gap-1 text-sm font-medium">
+                                <a href="https://mitsengineering.com/" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-yellow-500 transition-colors">mitsengineering.com</a>
+                                <a href="https://strukturbaja.id/" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-yellow-500 transition-colors">strukturbaja.id</a>
+                                <a href="https://bajastruktur.com/" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-yellow-500 transition-colors">bajastruktur.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <a href="https://wa.me/6281122334455?text=Halo%20MITS%20Engineering,%20saya%20butuh%20Bantuan%20Demolition/Coring%20Segera!" class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-black text-center py-4 rounded-xl uppercase tracking-wide shadow-lg hover:scale-[1.02] transition-transform">
-                    Panggil Tim Eksekusi WA
+                <a href="https://wa.me/628138111599?text=Halo%20MITS%20Engineering,%20Bisa%20jadwalkan%20Survey%20Lokasi%20segera?" class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-black text-center py-4 px-6 rounded-xl uppercase tracking-wide shadow-lg hover:scale-[1.02] transition-transform">
+                    MINTA PENAWARAN HARGA VIA WA
                 </a>
             </div>
             
@@ -380,7 +390,7 @@
             <div class="lg:col-span-2">
                 <h3 class="text-3xl text-white font-heading font-black tracking-tighter mb-4 uppercase text-yellow-500">MITS Engineering</h3>
                 <p class="text-sm text-neutral-400 max-w-md leading-relaxed mb-6">
-                    Kontraktor Demolition, Jasa Coring Beton, dan Potong Beton Industri Terpercaya. Mengeksekusi pembongkaran dengan standar keamanan tinggi dan alat berat spesialis di Bandung Raya & Jawa Barat.
+                    Kontraktor Demolition, Jasa Coring Beton, dan Potong Beton Industri Terpercaya. Mengeksekusi pembongkaran dengan standar keamanan tinggi dan alat berat spesialis di seluruh Indonesia.
                 </p>
             </div>
 
@@ -415,9 +425,9 @@
 
     <!-- STICKY FOOTER CTA (KHUSUS MOBILE - MELAYANG) -->
     <div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-neutral-950/90 backdrop-blur-lg border-t border-yellow-500/20 p-4 pb-6">
-        <a href="https://wa.me/6281122334455?text=Halo%20MITS%20Engineering,%20Darurat!%20Saya%20butuh%20bantuan%20Demolition/Coring." class="shiny-cta flex w-full justify-center items-center gap-2 !py-3">
+        <a href="https://wa.me/628138111599?text=Halo%20MITS%20Engineering,%20Darurat!%20Bisa%20bantu%20proyek%20pembongkaran%20kami?" class="shiny-cta flex w-full justify-center items-center gap-2 !py-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <span>HUBUNGI VIA WA SEKARANG</span>
+            <span>KONSULTASI WA SEKARANG</span>
         </a>
     </div>
 
