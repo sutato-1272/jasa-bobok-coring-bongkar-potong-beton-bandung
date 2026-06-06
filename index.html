@@ -8,7 +8,7 @@
     <meta name="description" content="Awas proyek telat & struktur retak! Spesialis jasa demolition, coring beton, & potong beton industri di Bandung Raya. Alat mutakhir, tenaga K3, beli baja tinggi.">
     
     <!-- Zero-Bloat: Menghapus Google Fonts untuk mencegah render-blocking, menggunakan system-ui -->
-    <link rel="preload" as="image" href="hero-demolition-bandung.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="hero-bg-kontraktor-demolition-jawa-barat.webp" type="image/webp" fetchpriority="high">
     
     <!-- Tailwind CDN dipertahankan khusus untuk deployment Vercel statis sesuai template -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +21,7 @@
         {
           "@type": "LocalBusiness",
           "name": "PT. Mitra Sentosa Rahardja (MITS Engineering)",
-          "image": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app/hero-demolition-bandung.webp",
+          "image": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app/hero-bg-kontraktor-demolition-jawa-barat.webp",
           "@id": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app/#organization",
           "url": "https://jasa-bobok-coring-bongkar-potong-beton-bandung.vercel.app",
           "telephone": "+6281122334455",
@@ -104,15 +104,15 @@
 <body class="antialiased text-neutral-100 bg-neutral-950 font-system selection:bg-yellow-500 selection:text-black relative pb-20 md:pb-0">
 
     <!-- HERO SECTION -->
-    <div class="absolute top-0 w-full -z-10 h-[920px] bg-cover bg-center blur-sm opacity-30 hero-bg" style="background-image: url('hero-demolition-bandung.webp');"></div>
+    <div class="absolute top-0 w-full -z-10 h-[920px] bg-cover bg-center blur-sm opacity-30 hero-bg" style="background-image: url('hero-bg-kontraktor-demolition-jawa-barat.webp');"></div>
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/80 via-neutral-950/95 to-neutral-950"></div>
 
     <section class="relative w-full sm:px-6 md:px-10 max-w-7xl mt-6 mx-auto px-4">
         <header class="w-full">
             <div class="flex gap-4 w-full mb-8 items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl font-black text-yellow-500 tracking-wider uppercase font-heading">MITS ENGINEERING</span>
-                </div>
+                <a href="/" class="flex items-center gap-3">
+                    <img src="logo-msr-engineering-demolition.webp" alt="Logo PT Mitra Sentosa Rahardja Kontraktor Demolition" width="250" height="80" class="h-16 md:h-20 w-auto object-contain">
+                </a>
                 <nav class="hidden md:flex items-center gap-8 text-sm text-neutral-300 font-bold uppercase tracking-wide">
                     <a href="#layanan" class="hover:text-yellow-400 transition-colors">Layanan</a>
                     <a href="#keunggulan" class="hover:text-yellow-400 transition-colors">Keunggulan</a>
@@ -146,80 +146,101 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Layanan 1 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Jasa Bobok & Coring Beton Bandung Raya</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Modifikasi rumah atau gedung sipil butuh akurasi. Kami melubangi beton bertulang tanpa merusak integritas struktur sekitarnya. Cepat, bersih, dan aman.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="jasa-bobok-coring-beton-bandung.webp" alt="Jasa tukang bobok dan coring beton perumahan bandung" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Jasa Bobok & Coring Beton Bandung Raya</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Modifikasi rumah atau gedung sipil butuh akurasi. Kami melubangi beton bertulang tanpa merusak integritas struktur sekitarnya. Cepat, bersih, dan aman.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Jasa%20Bobok%20dan%20Coring%20Bandung." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Coring</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Jasa%20Bobok%20dan%20Coring%20Bandung." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Coring</a>
             </article>
 
             <!-- Layanan 2 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Potong Beton Skala Industri Jawa Barat</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Mesin pabrik harus masuk hari ini? Kami potong lantai beton industri menggunakan mesin <i>Floor Saw</i> raksasa. Potongan presisi milimeter. Tanpa debu berlebih.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="potong-beton-industri-jawa-barat.webp" alt="Mesin potong beton industri wire saw jawa barat" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Potong Beton Skala Industri Jawa Barat</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Mesin pabrik harus masuk hari ini? Kami potong lantai beton industri menggunakan mesin <i>Floor Saw</i> raksasa. Potongan presisi milimeter. Tanpa debu berlebih.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Potong%20Beton%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Potong Beton</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Potong%20Beton%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Potong Beton</a>
             </article>
 
             <!-- Layanan 3 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Bongkar Gedung & Beli Baja Tinggi (Bandung)</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Aset tua Anda adalah uang. Kami merubuhkan gedung bertingkat dengan alat berat ekskavator. Scrap besi dan baja kami beli kembali dengan harga tertinggi di pasaran.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="jasa-bongkar-gedung-beli-baja-bekas.webp" alt="Proses pembongkaran gedung dan evakuasi struktur baja" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Bongkar Gedung & Beli Baja Tinggi (Bandung)</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Aset tua Anda adalah uang. Kami merubuhkan gedung bertingkat dengan alat berat ekskavator. Scrap besi dan baja kami beli kembali dengan harga tertinggi di pasaran.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Gedung%20dan%20Jual%20Baja." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Bongkar</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Gedung%20dan%20Jual%20Baja." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Bongkar</a>
             </article>
 
             <!-- Layanan 4 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Dismantling Fasilitas Pabrik (Cimahi)</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Relokasi mesin berat dan pipa smelter tidak bisa serampangan. Tim *rigger* dan spesialis *dismantling* kami mengurai fasilitas industri tanpa merusak mesin inti.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="dismantling-pabrik-mesin-cimahi.webp" alt="Proses dismantling mesin berat fasilitas pabrik cimahi" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Dismantling Fasilitas Pabrik (Cimahi)</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Relokasi mesin berat dan pipa smelter tidak bisa serampangan. Tim *rigger* dan spesialis *dismantling* kami mengurai fasilitas industri tanpa merusak mesin inti.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Dismantling%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Dismantling</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Dismantling%20Pabrik." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Dismantling</a>
             </article>
 
             <!-- Layanan 5 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Demolition & Relokasi Gudang (Padalarang)</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Lahan sempit? Padat penduduk? Tidak masalah. Kami merobohkan gudang raksasa dengan teknik *controlled demolition*. Minim getaran, aman untuk warga sekitar.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="demolition-gudang-aman-padalarang.webp" alt="Demolition bangunan gudang industri aman padalarang" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Demolition & Relokasi Gudang (Padalarang)</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Lahan sempit? Padat penduduk? Tidak masalah. Kami merobohkan gudang raksasa dengan teknik *controlled demolition*. Minim getaran, aman untuk warga sekitar.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Demolition%20Gudang." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Relokasi</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Demolition%20Gudang." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Relokasi</a>
             </article>
 
             <!-- Layanan 6 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3">Coring Jalur MEP & Perpipaan (Akurasi Tinggi)</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
-                        Pemasangan instalasi listrik dan plumbing gedung bertingkat mutlak butuh lubang simetris. Mesin coring kami menembus beton bertulang tebal dengan diameter presisi.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 flex flex-col">
+                <img src="coring-beton-jalur-mep-gedung.webp" alt="Coring beton presisi tinggi untuk jalur pipa MEP" class="w-full h-48 object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Coring Jalur MEP & Perpipaan (Akurasi Tinggi)</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Pemasangan instalasi listrik dan plumbing gedung bertingkat mutlak butuh lubang simetris. Mesin coring kami menembus beton bertulang tebal dengan diameter presisi.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Coring%20MEP." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim MEP</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Coring%20MEP." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim MEP</a>
             </article>
 
             <!-- Layanan 7 -->
-            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-yellow-500/50 transition duration-300 lg:col-span-3 lg:w-1/2 lg:mx-auto flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl text-white font-bold mb-3 text-center">Bongkar Pondasi & Modifikasi Struktur</h3>
-                    <p class="text-neutral-400 text-sm leading-relaxed mb-4 text-center">
-                        Pondasi lama menghalangi desain baru? Kami menggunakan *Wire Saw* dan *Jack Hammer* hidrolik untuk menghancurkan pilar beton masif hingga rata dengan tanah. Struktur baru siap dibangun.
-                    </p>
+            <article class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden hover:border-yellow-500/50 transition duration-300 lg:col-span-3 lg:w-2/3 lg:mx-auto flex flex-col md:flex-row">
+                <img src="bongkar-pondasi-modifikasi-struktur.webp" alt="Ahli bongkar potong pondasi beton bangunan" class="w-full md:w-1/2 h-48 md:h-auto object-cover" loading="lazy" decoding="async">
+                <div class="p-6 flex flex-col flex-grow justify-between md:w-1/2">
+                    <div>
+                        <h3 class="text-xl text-white font-bold mb-3">Bongkar Pondasi & Modifikasi Struktur</h3>
+                        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                            Pondasi lama menghalangi desain baru? Kami menggunakan *Wire Saw* dan *Jack Hammer* hidrolik untuk menghancurkan pilar beton masif hingga rata dengan tanah. Struktur baru siap dibangun.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Pondasi." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Struktur</a>
                 </div>
-                <a href="https://wa.me/6281122334455?text=Halo,%20info%20Bongkar%20Pondasi." class="inline-block w-full text-center bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 rounded-xl transition">Hubungi Tim Struktur</a>
             </article>
         </div>
     </section>
@@ -262,54 +283,53 @@
 
         <!-- 16 Grid System -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <!-- Melakukan loop manual untuk layout 16 gambar menggunakan placeholder seragam agar zero-bloat -->
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-1.webp" alt="Proyek Demolition 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-01.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-01-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-2.webp" alt="Proyek Demolition 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-02.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-02-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-3.webp" alt="Proyek Demolition 3" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-03.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-03-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-4.webp" alt="Proyek Demolition 4" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-04.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-04-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-5.webp" alt="Proyek Demolition 5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-05.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-05-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-6.webp" alt="Proyek Demolition 6" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-06.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-06-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-7.webp" alt="Proyek Demolition 7" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-07.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-07-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-8.webp" alt="Proyek Demolition 8" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-08.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-08-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-9.webp" alt="Proyek Demolition 9" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-09.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-09-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-10.webp" alt="Proyek Demolition 10" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-10.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-10-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-11.webp" alt="Proyek Demolition 11" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-11.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-11-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-12.webp" alt="Proyek Demolition 12" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-12.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-12-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-13.webp" alt="Proyek Demolition 13" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-13.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-13-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-14.webp" alt="Proyek Demolition 14" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-14.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-14-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-15.webp" alt="Proyek Demolition 15" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-15.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-15-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
             <div class="aspect-square bg-neutral-800 rounded-xl overflow-hidden group">
-                <img loading="lazy" decoding="async" src="porto-16.webp" alt="Proyek Demolition 16" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
+                <img loading="lazy" decoding="async" src="portofolio-proyek-msr-engineering-16.webp" alt="proyek-demolition-coring-potong-bobok-bongkar-beton-16-msr-engineering" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all group-hover:scale-110">
             </div>
         </div>
     </section>
@@ -342,15 +362,15 @@
                     Panggil Tim Eksekusi WA
                 </a>
             </div>
-            <div class="bg-neutral-800 h-64 lg:h-auto min-h-[400px] w-full cursor-pointer relative" onclick="window.open('https://maps.google.com/?q=Bandung+Jawa+Barat')">
-                <!-- Simulasi Peta (Bisa diganti iFrame Gmaps sesungguhnya) -->
-                <div class="absolute inset-0 bg-[url('map-placeholder.webp')] bg-cover bg-center opacity-50 mix-blend-luminosity"></div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="bg-black/80 px-6 py-3 rounded-full border border-yellow-500 text-yellow-500 font-bold tracking-widest uppercase backdrop-blur-sm">
+            
+            <a href="https://maps.app.goo.gl/pJ3QRyKkwR7rnSCd6" target="_blank" rel="noopener noreferrer" class="relative block h-64 lg:h-auto min-h-[400px] w-full overflow-hidden group bg-neutral-800">
+                <img src="peta-lokasi-jasa-bongkar-beton-baja-msr-engineering.jpg" alt="Peta lokasi jasa bongkar beton baja msr engineering" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity group-hover:opacity-100 group-hover:mix-blend-normal transition-all duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                    <div class="bg-black/90 px-6 py-3 rounded-full border border-yellow-500 text-yellow-500 font-bold tracking-widest uppercase backdrop-blur-md shadow-[0_0_20px_rgba(234,179,8,0.3)] group-hover:scale-110 transition-transform duration-300">
                         Klik Untuk Buka Google Maps
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
